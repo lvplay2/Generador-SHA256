@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Generador de Hash SHA-256</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Un generador de hash SHA-256 en línea.">
+    <meta name="keywords" content="SHA-256 online, generar hash sha-256, SHA-256 en línea, sha-256 generador, generar hashes sha-256, generar hashes sha-256 online">
+</head>
+<body>
+    <div class="container">
+        <h1>Generador de Hash SHA-256</h1>
+        <label for="text-input">Ingresa el texto:</label>
+        <input type="text" id="text-input" placeholder="Texto aquí...">
+        <p></p>
+        <label for="salt-input">Ingresa el salt (opcional):</label>
+        <input type="text" id="salt-input" placeholder="Salt aquí...">
+        <br>
+        <input type="checkbox" id="disable-salt">
+        <label for="disable-salt">Deshabilitar salt</label>
+        <p></p>
+        <button onclick="generateHash()">Generar Hash</button>
+        
+        <div id="output"></div>
+        <button id="copy-btn" onclick="copyToClipboard()">Copiar al portapapeles</button>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
